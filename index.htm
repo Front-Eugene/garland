@@ -66,6 +66,55 @@
         /* body {
             user-select: none;
         } */
+
+        .sale-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sale-item {
+            width: 100%;
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .discount-block-item {
+            height: 80px;
+            position: relative;
+            background: #cd3017;
+        }
+
+        .right {
+            height: 100%;
+            position: absolute;
+            border-top: 40px solid #fff;
+            border-bottom: 40px solid #fff;
+            border-left: 20px solid #cd3017;
+            right: -10px;
+        }
+
+        .left {
+            height: 100%;
+            position: absolute;
+            border-top: 40px solid #cd3017;
+            border-bottom: 40px solid #cd3017;
+            border-left: 20px solid #fff;
+            left: -10px;
+        }
+
+        .value-item {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .benefits_list1 {
+            color: #fff;
+            padding: 30px 0 0 0;
+            background: green;
+        }
     </style>
 
     <!-- <script language="JavaScript">
@@ -99,7 +148,7 @@
     <div class="main_wrapper">
         <!-- header 3 -->
         <header class="offer_section offer3">
-            <div class="title_block">
+            <div class="title_block" style="background: green;">
                 <h1>Уличная Гирлянда</h1>
                 <p>Новогоднее настроение для всех</p>
             </div>
@@ -134,29 +183,29 @@
                     <div class="text"><p>скидка</p></div>
                 </div>
             </div>
-            <div class="benefits_list clearfix">
+            <div class="benefits_list clearfix" style="background: green;">
                 <div class="benefit_item"><p>100% гарантия качества</p></div>
                 <div class="benefit_item"><p>Ограниченное предложение</p></div>
                 <div class="benefit_item"><p>Оплата при получении</p></div>
             </div>
-            <div class="price_block clearfix">
-                <div class="price_item old" style="height: auto;">
-                    <div class="text"><p style="margin: 0 0 12px 0;">Обычная цена:</p></div>
-                    <div class="value"><font class="price_old6744"><p style="text-decoration: none; margin: 0 10px 0 0">6м</p><p>79.99</p></font>&nbsp;<font class="price_currency">BYN</font></div>
-                    <div class="value"><font class="price_old6744"><p style="text-decoration: none; margin: 0 10px 0 0">12м</p><p>109.99</p></font>&nbsp;<font class="price_currency">BYN</font></div>
-                    <div class="value"><font class="price_old6744"><p style="text-decoration: none; margin: 0 10px 0 0">20м</p><p>139.99</p></font>&nbsp;<font class="price_currency">BYN</font></div>
-                    <div class="value"><font class="price_old6744"><p style="text-decoration: none; margin: 0 10px 0 0">25м</p><p>149.99</p></font>&nbsp;<font class="price_currency">BYN</font></div>
-                    <div class="value"><font class="price_old6744"><p style="text-decoration: none; margin: 0 10px 0 0">50м</p><p>239.99</p></font>&nbsp;<font class="price_currency">BYN</font></div>
+
+            <div class="sale-wrap">
+                <div class="sale-item old-item" style="color: #9a9a9a;">
+                  <div class="text-item">Обычная цена (от):</div>
+                  <div class="value-item" style="text-decoration: line-through;">79.99 BYN</div>
                 </div>
-                <div class="price_item new">
-                    <div class="text"><span><p>Вы экономите 50%</p></span></div>
-                    <div class="value"><font class="price_only6744">39.99</font>&nbsp;<font class="price_currency">BYN</font></div>
-                    <div class="value"><font class="price_only6744">54.99</font>&nbsp;<font class="price_currency">BYN</font></div>
-                    <div class="value"><font class="price_only6744">69.99</font>&nbsp;<font class="price_currency">BYN</font></div>
-                    <div class="value"><font class="price_only6744">74.99</font>&nbsp;<font class="price_currency">BYN</font></div>
-                    <div class="value"><font class="price_only6744">119.99</font>&nbsp;<font class="price_currency">BYN</font></div>
+                <div class="sale-item discount-block-item" style="color: #fff;">
+                  <div class="left"></div>
+                  <div class="text-item">скидка</div>
+                  <div class="value-item">-50%</div>
+                  <div class="right"></div>
+                </div>
+                <div class="sale-item new-item">
+                  <div class="text-item">Цена сегодня (от):</div>
+                  <div class="value-item">39.99 BYN</div>
                 </div>
             </div>
+
             <ul>
                 <li>
                     <p>Подходит как для улицы, так и для дома</p>
@@ -181,7 +230,7 @@
             </video>
         <!-- /video -->
         <!-- problems -->
-        <section class="problems_section dark_theme">
+        <section class="problems_section dark_theme" style="background:green;">
             <h2>Избавьте себя от трудностей</h2>
             <div class="benefits_list1 image_rounded">
                 <div class="benefit_item">
@@ -233,8 +282,8 @@
         </section>
         <!-- /description -->
         <!-- benefits -->
-        <section class="benefits_section dark_theme">
-            <h2>Преимущества нашей гирлянды</h2>
+        <section class="benefits_section dark_theme" style="background: green;">
+            <h2 style="border-top: 5px solid #fff; border-bottom: 5px solid #fff;  padding: 10px 0;">Преимущества нашей гирлянды</h2>
             <div class="benefits_list3">
                 <div class="benefit_item">
                     <div class="benefit_item_image" style="background-image: url(img/7.jpg)"></div>
@@ -342,7 +391,7 @@
         <!-- /order steps 1 -->
         <!-- order 3 -->
         <section class="offer_section offer3">
-            <div class="title_block">
+            <div class="title_block" style="background: green;">
                 <h1>УЛИЧНАЯ ГИРЛЯНДА</h1>
                 <p>праздник в каждый дом</p>
             </div>
@@ -377,12 +426,28 @@
                     <div class="text"><p>скидка</p></div>
                 </div> -->
             </div>
-            <div class="benefits_list clearfix">
+            <div class="benefits_list clearfix" style="background: green;">
                 <div class="benefit_item"><p>100% гарантия качества</p></div>
                 <div class="benefit_item"><p>Ограниченное предложение</p></div>
                 <div class="benefit_item"><p>Оплата при получении</p></div>
             </div>
-            <div class="price_block clearfix">
+            <div class="sale-wrap">
+                <div class="sale-item old-item" style="color: #9a9a9a;">
+                  <div class="text-item">Обычная цена (от):</div>
+                  <div class="value-item" style="text-decoration: line-through;">79.99 BYN</div>
+                </div>
+                <div class="sale-item discount-block-item" style="color: #fff;">
+                  <div class="left"></div>
+                  <div class="text-item">скидка</div>
+                  <div class="value-item">-50%</div>
+                  <div class="right"></div>
+                </div>
+                <div class="sale-item new-item">
+                  <div class="text-item">Цена сегодня (от):</div>
+                  <div class="value-item">39.99 BYN</div>
+                </div>
+            </div>
+            <!-- <div class="price_block clearfix">
                 <div class="price_item old" style="height: auto;">
                     <div class="text"><p style="margin: 0 0 12px 0;">Обычная цена:</p></div>
                     <div class="value"><font class="price_old6744"><p style="text-decoration: none; margin: 0 10px 0 0">6м</p><p>79.99</p></font>&nbsp;<font class="price_currency">BYN</font></div>
@@ -399,7 +464,7 @@
                     <div class="value"><font class="price_only6744">74.99</font>&nbsp;<font class="price_currency">BYN</font></div>
                     <div class="value"><font class="price_only6744">119.99</font>&nbsp;<font class="price_currency">BYN</font></div>
                 </div>
-            </div>
+            </div> -->
             <form id="order_form" class="order_form" action="/" method="post">
                 <input type="hidden" name="_token" value="9KumC4GlTs5Rqt7wC3wKWtzP2OMHavzCtg4yJmeb">                <input type="hidden" name="price" value="39">
 <input type="hidden" name="uid" value="">
